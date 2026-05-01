@@ -9,7 +9,7 @@ use-case example. See [Dream documentation
 page](https://camlworks.github.io/dream/).
 
 This first example assembles Dream and its templating framework, Caqti
-(a database library compatible with SQlite, Postgres, MySql/MaraDB),
+(a database library compatible with SQlite, Postgres, MySql/MariaDB),
 and ppx_reaper (a preprocessor that makes it easier to use Caqti).
 
 ## Main function, routing table
