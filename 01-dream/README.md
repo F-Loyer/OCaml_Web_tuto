@@ -44,16 +44,16 @@ let () =
 ]
 ```
 
-We can see different route handler. `Dream.get`, `Dream.post` or
-`any`, match some file patterns and HTML queries, and need an
-__handler__ which is function that process it. Some functions are
+We can see different route handlers. `Dream.get`, `Dream.post` or
+`Dream.any`, match some file patterns and HTML queries, and need
+__handlers__ which are functions that process them. Some functions are
 already provided (`Dream.static` for serving static files and
-`Dream.redirect` for redirections), but we may use a custom function.
+`Dream.redirect` for redirections), but we may use custom functions.
 
 `Dream.scope` handles a whole directory and needs a list of
 __middleware__ and another routing table. Usually, an empty list of
-middleware is adequate, but here, a `filter_admin` middleware enforce
-a security filter at the whole directory.
+middleware is adequate, but here, a `custom filter_admin` middleware
+enforce a security filter at the whole directory.
 
 ## A simple rendering handler
 
