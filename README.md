@@ -42,4 +42,4 @@ but rather uses a set of functions eponymous to HTML tags. These
 functions build the HTML result and guarantee that it is well-formed.
 See [the TyXML page](https://ocsigen.org/tyxml/latest/manual/intro)
 
-[TyXML example](03-tyxml/index.html">TyXML example)
+[TyXML example](03-tyxml/index.html)
