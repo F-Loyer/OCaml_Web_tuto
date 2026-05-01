@@ -52,7 +52,7 @@ already provided (`Dream.static` for serving static files and
 
 `Dream.scope` handles a whole directory and needs a list of
 _middleware_ and another routing table. Usually, an empty list of
-middleware is adequate, but here, a `custom filter_admin` middleware
+middleware is adequate, but here, a custom `filter_admin` middleware
 enforce a security filter at the whole directory.
 
 ## A simple rendering handler
