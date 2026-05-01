@@ -5,7 +5,7 @@ Dream is a nice Web framework that permits you to route your
 application call between different rendering and processing
 functions. It comes with a templating system (but doesn't mandate
 it). It handles many use cases and is well documented with many
-use-case example. See [Dream documentation
+use-case examples. See [Dream documentation
 page](https://camlworks.github.io/dream/).
 
 This first example assembles Dream and its templating framework, Caqti
