@@ -77,7 +77,7 @@ let render_t1 request =
 We note that because of the SQL request `get_t1`, the result must be a
 `Lwt_result`. Here `let*?` allows you to chain easily multiple
 `Lwt_result` (here, `get_t1` and `Lwt_result.return`). The end result
-is processed by `process_caqti_error` which render an error page if
+is processed by `process_caqti_error` which renders an error page if
 the result is an error. It is defined by:
 
 ```ocaml
@@ -89,11 +89,11 @@ let process_caqti_error result =
      Dream.log "Caqti:%s" error;
      let body = Render_dberror.render ~error in
      Dream.html body       
-   `</pre>
-   <p>
-     The database query is defined by the simple query:
-   </p>
-   <pre>`
+```
+
+The database query is defined by the simple query:
+
+```ocaml
 let get_t1 ~db =
   [%rapper
     get_many
