@@ -1,0 +1,15 @@
+(executables
+ (names main)
+ (public_names main)
+ (libraries
+  dream
+  caqti
+  caqti-lwt
+  caqti-driver-mariadb
+  ppx_rapper
+  ppx_rapper_lwt
+  jingoo
+  camomile)
+ (preprocess
+  (pps ppx_rapper lwt_ppx)))
+

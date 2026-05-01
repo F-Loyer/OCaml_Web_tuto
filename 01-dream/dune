@@ -1,0 +1,31 @@
+(executables
+ (names main)
+ (public_names main)
+ (libraries
+  dream
+  caqti
+  caqti-lwt
+  caqti-driver-mariadb
+  ppx_rapper
+  ppx_rapper_lwt
+  camomile)
+ (preprocess
+  (pps ppx_rapper lwt_ppx)))
+
+(rule
+ (targets render_t1.ml)
+ (deps render_t1.eml)
+ (action
+  (run dream_eml %{deps})))
+
+(rule
+ (targets render_dberror.ml)
+ (deps render_dberror.eml)
+ (action
+  (run dream_eml %{deps})))
+
+(rule
+ (targets login.ml)
+ (deps login.eml)
+ (action
+  (run dream_eml %{deps})))

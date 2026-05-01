@@ -1,0 +1,40 @@
+let render ~csrf_tag =
+<html>
+ <head>
+   <style>
+h1 {
+  border-bottom-style:solid;
+  border-bottom-width:5px;
+  border-bottom-color:#08C;
+  font-family: Verdana, sans-serif; 
+  font-style: italic;
+}
+
+    button {
+      margin-top: 0em;
+      padding: 0.5em 1.5em;
+      font-size: 1em;
+      background-color: #08C;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    table { border-collapse: collapse;   border: 2px solid #08C; }
+    td, th { border: 1px solid #08c; padding: 8px; }
+    input { width: 100px; box-sizing: border-box; }
+    form { display: inline; margin: 0; }
+     /* th:nth-child(6) { width: 40px; } */ 
+</style>
+
+ </head>
+<body>
+  <h1>Authentification</h1>
+<form action="#" method="post">
+  <%s! csrf_tag %>
+  <p><input type="text" name="username" placeholder="Username"/></p>
+  <p><input type="password" name="password" placeholder="Password"/></p>
+  <p><button type="submit">Login</button></form></p>
+</body>
+</html>

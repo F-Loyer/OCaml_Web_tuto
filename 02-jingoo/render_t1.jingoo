@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+h1 {
+  border-bottom-style:solid;
+  border-bottom-width:5px;
+  border-bottom-color:#08C;
+  font-family: Verdana, sans-serif; 
+  font-style: italic;
+}
+table { border-collapse: collapse; border: 2px solid #08c;}
+td, th { border: 1px solid #08c; padding: 8px; }
+input { width: 30%; box-sizing: border-box; }
+td input { width: 100%; box-sizing: border-box; }
+form { display: inline; margin: 0; }
+th:nth-child(1) { width: 400px; } td:nth-child(3) { width: 60px;}
+th:nth-child(2) { width: 120px; } 
+</style>
+</head>
+ <body>
+   <h1>Private</h1>
+{% if logged %}
+  <p>You are logged.</p>
+  <p><a href="private">private directory</a></p>
+  <p><a href="/logout.html">Logout</a></p>
+{% else %}
+  <p><a href="/login.html">Login</a></p>
+{% endif %}
+   <h1>T1 table</h1>
+   <table>
+     <tr><th>Value</th><th>Actions</th></tr>
+       <tr style="background:#08C">
+         <form action="#" method="POST" style="display:inline">
+      {{ csrf_tag|safe }}
+      <td><input type="value" name="value" value=""></td>
+      <td><button type="submit" name="action" value="insert">add</button></td>
+      </form></tr>
+{% for (id, value) in table %}
+      <tr>
+        <form action="#" method="POST" style="display:inline">
+        {{ csrf_tag|safe }}
+        <input type="hidden" name="id" value="{{ id }}">
+        <td><input type="value" name="value" value="{{ value }}"></td>
+        <td>
+        <button type="submit" name="action" value="change">change</button>
+        <button type="submit" name="action" value="delete">delete</button>
+        </td>
+      </form></tr>
+{% endfor %}
+  </table>
+</body>
+</html>
+

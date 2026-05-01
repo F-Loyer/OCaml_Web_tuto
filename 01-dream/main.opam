@@ -1,0 +1,22 @@
+opam-version: "2.0"
+name: "tuto-dream"
+maintainer: "fredric.loyer@gmail.com"
+authors: "Frédéric LOYER"
+#homepage: "https://github.com/votre-utilisateur/votre-projet"
+license: "MIT"
+synopsis: "Projet OCaml avec Dream, Caqti, Caqti-mysql, ppx_rapper"
+build: [
+  ["dune" "build" "-p" name "-j" jobs]
+  ["dune" "runtest" "-p" name] {with-test}
+]
+depends: [
+  "ocaml" {>= "4.08.0"}
+  "dune" {>= "2.8"}
+  "dream"
+  "caqti"
+  "caqti-lwt"
+  "caqti-driver-mariadb"
+  "ppx_rapper"
+  "ppxlib"
+]
+#dev-repo: "git+https://github.com/votre-utilisateur/votre-projet.git"
