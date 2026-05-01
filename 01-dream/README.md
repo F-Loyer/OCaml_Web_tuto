@@ -8,7 +8,7 @@ it. It handles many use cases and is well documented with many
 use-case example. See [Dream documentation
 page](https://camlworks.github.io/dream/).
 
-This first example assemble Dream and its templating framework, Caqti
+This first example assembles Dream and its templating framework, Caqti
 (a database library compatible with SQlite, Postgres, MySql/MaraDB),
 and ppx_reaper (a preprocessor that makes it easier to use Caqti).
 
@@ -46,7 +46,7 @@ let () =
 
 We can see different route handler. `Dream.get`, `Dream.post` or
 `any`, match some file patterns and HTML queries, and need an
-__handeler__ which is function that process it. Some functions are
+__handler__ which is function that process it. Some functions are
 already provided (`Dream.static` for serving static files and
 `Dream.redirect` for redirections), but we may use a custom function.
 
@@ -112,7 +112,7 @@ funtion that takes `() db` as parameters and returns a list of tuples
 `(id, value)`.
 
 ppx_rapper has many options which are described on
-the [ppx_rapper GitHub site]https://github.com/roddyyaga/ppx_rapper)
+the [ppx_rapper GitHub site](https://github.com/roddyyaga/ppx_rapper)
 
 The actual rendering is provided in a `.eml` files like:
 
@@ -172,7 +172,7 @@ h1 {
 </html>
 ```     
 
-We notice the `% ...` form which interlace OCaml code especially for
+We notice the `% ...` form which interlaces OCaml code especially for
 control code (conditionals, loops), `<%d var %>`, `<%s var %>` and
 `<%s! var %>` for variable outputing. the `<%s!` is for raw output (no
 HTML quoting) in cases we are sure not to mess the HTML structure (XSS

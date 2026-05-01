@@ -6,7 +6,7 @@ frameworks. A simple application will stress multiple aspects of
 typical application: rendering, form processing, database query,
 security.
 
-Note: the (sql) file is intended to initialise a SQL database used by
+Note: the [sql](sql) file is intended to initialise a SQL database used by
 these exemples.
 
 ## Dream
@@ -30,7 +30,7 @@ Python. This is what proposes Jingoo. This has a neater syntax, but
 its ".jingoo" files are not compiled (and their errors are detected at
 run time while the Dream template would have raised an error at
 compile
-time). See [Jingoo Github page[(https://github.com/tategakibunko/jingoo).
+time). See [Jingoo Github page](https://github.com/tategakibunko/jingoo).
 
 [Jingoo example](02-jingoo)
 
