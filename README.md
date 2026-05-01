@@ -1,5 +1,5 @@
-#OCaml Web tutorials#
-##Introduction##
+# OCaml Web tutorials
+## Introduction
 
 This page gives you a short glimpse of multiple OCaml Web
 frameworks. A simple application will stress multiple aspects of
@@ -9,7 +9,7 @@ security.
 Note: the (sql) file is intended to initialise a SQL database used by
 these exemples.
 
-##Dream##
+## Dream
 
 Dream is a nice Web framework that permits you to route your
 application call between different rendering and processing
@@ -20,7 +20,7 @@ use-case example. See
 
 [Dream example](01-dream)
 
-##Dream and Jingoo##
+## Dream and Jingoo
 
 Despite the templating proposed by Dream, you may prefer a template
 system similar to
@@ -34,7 +34,7 @@ time). See [Jingoo Github page[(https://github.com/tategakibunko/jingoo).
 
 [Jingoo example](02-jingoo)
 
-##Dream and TyXML#
+## Dream and TyXML
 
 The templating approach proposed by Dream may also be replaced by
 TyXML. This does not work like template-based string extrapolation,

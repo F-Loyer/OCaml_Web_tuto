@@ -1,5 +1,5 @@
-#Dream#
-##Introduction##
+# Dream
+## Introduction
 
 Dream is a nice Web framework that permits you to route your
 application call between different rendering and processing
@@ -12,7 +12,7 @@ This first example assemble Dream and its templating framework, Caqti
 (a database library compatible with SQlite, Postgres, MySql/MaraDB),
 and ppx_reaper (a preprocessor that makes it easier to use Caqti).
 
-##Main function, routing table##
+## Main function, routing table
 
 The (main.ml) file runs the whole framework with a routing table.
 
@@ -55,7 +55,7 @@ __middleware__ and another routing table. Usually, an empty list of
 middleware is adequate, but here, a `filter_admin` middleware enforce
 a security filter at the whole directory.
 
-##A simple rendering handler##
+## A simple rendering handler
 
 The following handler prepare the data to be rendered and calls
 `Render_t1.render` which does the actual template rendering.

@@ -1,5 +1,5 @@
-#Jingoo
-##Introduction##
+# Jingoo
+## Introduction
 
 Despite the templating proposed by Dream, you may prefer a template
 system similar to
@@ -15,7 +15,7 @@ This second example replaces the Dream templatating by Jingoo. The
 Jingoo integration will be developped. See the [first
 example](../01-dream) for the description of the other matters.
 
-##Model preparation##
+## Model preparation
 
 Before rendering a jingoo file, a model must be agregated and includes
 all data, taggued with their type and associated with the name used by
@@ -38,7 +38,7 @@ called afterwards.
           ]
 ```
 
-##The jingoo template file##
+## The jingoo template file
 
 The jingoo template file uses two conventions: `%` for control
 sequence (here if/else/endif and for/endfor), and `{{ value }}` for

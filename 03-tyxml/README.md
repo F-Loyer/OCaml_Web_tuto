@@ -1,5 +1,5 @@
-#TyXML#
-##Introduction##
+# TyXML
+## Introduction
 
 The templating approach proposed by Dream may also be replaced by
 TyXML. This does not work like template-based string extrapolation,
@@ -7,14 +7,14 @@ but rather uses a set of functions eponymous to HTML tags. These
 functions build the HTML result and guarantee that it is well-formed.
 See [The TyXML page](https://ocsigen.org/tyxml/latest/manual/intro).
 
-##Data preparation##
+## Data preparation
 
 The data preparation is exactely the same than with the Dream
 templating system excepted that TyXML can't insert an HTML snippet
 given by `Dream.csrf_tag`. The alternative is to use
 `Dream.csrf_token` and create afterwards the hidden input tag.
 
-##HTML rendering##
+## HTML rendering
 
 The idea is to use plain funtions like `html`, `head`, `body`, `div`,
 `p`, which all generate a HTML snippet. The OCaml type system is used
