@@ -11,7 +11,7 @@ run time while the Dream template would have raised an error at
 compile
 time). See [Jingoo GitHub page](https://github.com/tategakibunko/jingoo).
 
-This second example replaces the Dream templatating by Jingoo. The
+This second example replaces the Dream templating by Jingoo. The
 Jingoo integration will be developped. See the [first
 example](../01-dream) for the description of the other matters.
 
