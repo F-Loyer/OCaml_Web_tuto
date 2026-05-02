@@ -28,7 +28,7 @@ list. These exceptions guarantee the strict HTML conformance. In the
 same way, most attributes accept a string, but some others, a constant
 compatible with a polymorphic variant type. Typically, `a_input_type`
 accepts things like `` `Hidden``, `` `Text``, `` `Password``.
-`a_button_type` accepts things like `` `Submit`, and `a_method` (for
+`a_button_type` accepts things like `` `Submit``, and `a_method` (for
 forms), `` `Post`` and other form submition keyword.
 
 The strict conformance is incompatible with previous examples: their
